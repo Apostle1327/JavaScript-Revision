@@ -18,4 +18,8 @@ switch (operator) {
   case "/":
     console.log(valueA / valueB);
     break;
+
+  case "%":
+    console.log(valueA % valueB);
+    break;
 }
