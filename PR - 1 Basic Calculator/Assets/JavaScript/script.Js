@@ -1,5 +1,5 @@
 const valueA = +prompt("Enter the First Operand");
-const operator = prompt("Enter the Operator");
+const operator = prompt("Choose the Operator: '+', '-', '*', '/', '%'");
 const valueB = +prompt("Enter the Second Operand");
 
 switch (operator) {
