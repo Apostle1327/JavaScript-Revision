@@ -1,6 +1,6 @@
-const valueA = +prompt("Enter the First Operator");
-const operator = prompt("Enter the Operand");
-const valueB = +prompt("Enter the Second Operator");
+const valueA = +prompt("Enter the First Operand");
+const operator = prompt("Enter the Operator");
+const valueB = +prompt("Enter the Second Operand");
 
 switch (operator) {
   case "+":
