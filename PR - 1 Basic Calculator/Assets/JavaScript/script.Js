@@ -22,4 +22,7 @@ switch (operator) {
   case "%":
     console.log(valueA % valueB);
     break;
+
+  default:
+    alert("Please choose a Proper operator.");
 }
