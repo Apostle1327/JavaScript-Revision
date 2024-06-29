@@ -3,10 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lecture Day 8</title>
+    <title>PR - 2</title>
     <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
   </head>
-  <body>
+  <body data-bs-theme="dark">
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div
+          class="card__content d-flex justify-content-center align-items-center"
+        >
+          <span class="d-flex flex-column py-2 px-3">
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="evaluateEmployee()"
+            >
+              Que-1
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="classifyGrade()"
+            >
+              Que-2
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="identifyCharType()"
+            >
+              Que-3
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="calculateBMI()"
+            >
+              Que-4
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="classifyNumber()"
+            >
+              Que-5
+            </button>
+            <br />
+          </span>
+
+          <span class="d-flex flex-column px-3 pb-4">
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="calculateBill()"
+            >
+              Que-6
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="getGreeting()"
+            >
+              Que-7
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="checkTriangle()"
+            >
+              Que-8
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="calculateGPA()"
+            >
+              Que-9
+            </button>
+            <br />
+
+            <button
+              type="button"
+              class="mx-auto bg-transparent border-danger-subtle py-1 px-2"
+              onclick="getDayOfWeek()"
+            >
+              Que-10
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
     <script src="Assets/JavaScript/Script.JS"></script>
     <script src="Assets/JavaScript/bootstrap.bundle.js"></script>
   </body>
