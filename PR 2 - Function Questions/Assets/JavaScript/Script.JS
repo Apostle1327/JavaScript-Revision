@@ -216,9 +216,9 @@ function calculateBill() {
 // Question - 7
 
 function getGreeting() {
-  let currentHour = prompt("Enter the Current Hour (0-23)");
+  let currentHour = prompt("Enter the Current Hour (0-24)");
 
-  if (isNaN(currentHour) || currentHour <= 0 || currentHour >= 24) {
+  if (isNaN(currentHour) || currentHour <= 0 || currentHour >= 25) {
     alert("Invalid input: Please enter a proper Number.");
   }
 
@@ -230,7 +230,9 @@ function getGreeting() {
     greeting = console.log("Good Afternoon");
   } else if (currentHour >= 17 && currentHour <= 20) {
     greeting = console.log("Good Evening");
-  } else if (currentHour >= 21 && currentHour <= 4) {
+  } else if (currentHour >= 21 && currentHour <= 24) {
+    greeting = console.log("Good Night");
+  } else if (currentHour >= 0 && currentHour <= 4) {
     greeting = console.log("Good Night");
   }
 
