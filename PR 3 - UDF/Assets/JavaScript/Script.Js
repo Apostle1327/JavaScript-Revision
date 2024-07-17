@@ -48,4 +48,53 @@ function question6() {
   console.log(greeting("Neville!"));
 }
 
-function question7() {}
+function question7() {
+  (function () {
+    console.log(`IIFE executed!`);
+  })();
+}
+
+function question8() {
+  function counter() {
+    let count = 0;
+    return function () {
+      count++;
+      return count;
+    };
+  }
+  let count1 = counter();
+  console.log(count1());
+  console.log(count1());
+  let count2 = counter();
+  console.log(count2());
+  console.log(count1());
+}
+
+function question9() {
+  let getObject = () => ({ name: `John` });
+  console.log(getObject());
+}
+
+function question10() {
+  let square = function (v) {
+    return v * v;
+  };
+
+  console.log(square(1327));
+}
+
+function question11() {
+  let hello = () => `Hello!`;
+  console.log(hello());
+}
+
+function question12() {
+  function createMultiplier(factor) {
+    return function (x) {
+      return x * factor;
+    };
+  }
+
+  let double = createMultiplier(5);
+  console.log(double(100));
+}
