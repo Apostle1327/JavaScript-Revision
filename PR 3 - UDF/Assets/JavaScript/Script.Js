@@ -98,3 +98,52 @@ function question12() {
   let double = createMultiplier(5);
   console.log(double(100));
 }
+
+function question13() {
+  function addition(a, b) {
+    return a + b;
+  }
+  console.log(addition(13, 27));
+  console.log(addition(13));
+  console.log(addition());
+}
+
+function question14() {
+  function over(a, b) {
+    if (b === undefined) {
+      b = a;
+    }
+    return a + b;
+  }
+  console.log(over(13, 27));
+  console.log(over(20));
+}
+
+function question15() {
+  console.log(declare());
+  function declare() {
+    return `Function Declared!`;
+  }
+
+  console.log(exp());
+  var exp = function express() {
+    return `Function Expressed!`;
+  };
+}
+
+function question16() {
+  function counter() {
+    let count = 0;
+    return function () {
+      count++;
+      return count;
+    };
+  }
+  let count1 = counter();
+  let count2 = counter();
+
+  console.log(count1());
+  console.log(count1());
+  console.log(count2());
+  console.log(count2());
+}
