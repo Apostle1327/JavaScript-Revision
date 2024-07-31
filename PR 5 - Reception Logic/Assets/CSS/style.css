@@ -1,7 +1,5 @@
 .card {
-  height: 254px;
   margin: 0 auto;
-  background-color: #f8fbfe;
   border-radius: 8px;
   z-index: 1;
 }
