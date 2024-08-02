@@ -27,31 +27,7 @@ let libertyWalk = {
           ],
         },
       ],
-      PORSCHE: [
-        {
-          typeOfKits: [
-            {
-              completeBodyKit: 1,
-              priceRange: [
-                {
-                  lbStarWorksPorsche911TurboVer1FullBodyKit: "$18000 - $20300",
-                },
-              ],
-            },
-            {
-              bodyKitWorks: 3,
-              priceRange: [
-                {
-                  lbStarWorksPorsche911turboFrontBumperAndFrontLip:
-                    "$5500 - $6700",
-                  lbStarWorksPorsche911TurboV1RearWing: "$4500 - $4600",
-                  lbStarWorksPorsche911TurboRearBumper: "$4500",
-                },
-              ],
-            },
-          ],
-        },
-      ],
+
       TOYOTA: [
         {
           typeOfKits: [
