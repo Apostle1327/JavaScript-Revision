@@ -1,0 +1,44 @@
+/* Headline */
+h1 {
+  font-family: "Monaspace Radon", sans-serif;
+}
+
+#changingText {
+  color: #ffd166;
+  font-family: "Monaspace Radon";
+}
+
+#calculator {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Geist Mono", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center !important;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#display {
+  font-size: 80px;
+  text-align: right;
+  border: none;
+  margin-bottom: 50px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: hsl(0, 0%, 30%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px !important;
+  border: none;
+  cursor: pointer;
+}
