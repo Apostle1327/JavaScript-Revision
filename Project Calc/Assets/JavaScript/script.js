@@ -47,8 +47,8 @@ function appendToDisplay(input) {
   output.value += input;
 }
 
-function clearDisplay() {
-  output.value = "";
+function backSpace() {
+  output.value = output.value.slice(0, -1);
 }
 
 function calculate() {
@@ -59,14 +59,14 @@ function calculate() {
   }
 }
 
-function square() {
-  try {
-    output.value *= output.value;
-  } catch (error) {
-    output.value = `Error`;
-  }
+function clearDisplay() {
+  output.value = "";
 }
 
-function backSpace() {
-  output.value = output.value.slice(0, -1);
+function invert() {
+  output.value *= -1;
+}
+
+function square() {
+  output.value *= output.value;
 }
