@@ -8,12 +8,18 @@ h1 {
   font-family: "Monaspace Radon";
 }
 
+/* Calculator */
+
+body {
+  overflow: hidden;
+}
+
 #calculator {
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 10%);
   border-radius: 15px;
   padding: 10px;
   font-family: "Geist Mono", sans-serif;
-  font-size: 40px;
+  font-size: 65px;
   font-weight: bold;
   text-align: center !important;
   max-width: 500px;
@@ -23,8 +29,10 @@ h1 {
 #display {
   font-size: 80px;
   text-align: right;
+  background-color: hsl(0, 0%, 20%);
   border: none;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: "Digital-7" !important;
 }
 
 #buttons {
@@ -41,4 +49,25 @@ button {
   border-radius: 50px !important;
   border: none;
   cursor: pointer;
+  text-align: center;
+  font-family: "Ticking Timebomb BB" !important;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+  background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+  background-color: hsl(35, 100%, 60%);
+}
+
+.operator-btn:active {
+  background-color: hsl(35, 100%, 75%);
 }
