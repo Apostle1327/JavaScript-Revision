@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="Assets/CSS/countdown.css" />
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container d-flex justify-content-center text-center">
+      <div class="Countdown">
+        <div class="countdown-display" id="countdownDisplay">00:00:10</div>
+        <input
+          type="number"
+          class="input-field"
+          id="customCountdownInput"
+          min="1"
+          placeholder="Set in sec"
+        />
+        <button id="startCountdownBtn">Start Countdown</button>
+        <button id="stopCountdownBtn">Pause Countdown</button>
+        <button id="resetCountdownBtn">Reset Countdown</button>
+      </div>
+    </div>
+
+    <div id="timeoutModal" class="modal">
+      <div class="modal-content">
+        <h2>Time's up!</h2>
+        <button id="closeModalBtn">Close</button>
+      </div>
+    </div>
+
+    <script src="Assets/JavaScript/Countdown.js"></script>
+    <script src="Assets/JavaScript/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.counter {
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.count {
+  font-family: "Ticking Timebomb BB";
+  font-size: 3rem;
+}
+
+.changeBy {
+  font-family: "Ticking Timebomb BB";
+}
+
+button {
+  height: 40px;
+  width: 75px;
+  background-color: #f1c376;
+  border: 1px solid burlywood;
+  cursor: pointer;
+  color: #87431d;
+}
+
+.minus-btn,
+.plus-btn {
+  font-size: 20px;
+}
+.changeBy {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin: 16px 8px;
+}
