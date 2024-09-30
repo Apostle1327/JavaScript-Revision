@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
   </head>
 
-  <body>
-    <div class="container d-flex justify-content-center">
-      <div class="todo-box">
-        <input
-          type="text"
-          id="item"
-          autofocus
-          placeholder="Write something here..."
-        />
-        <ul id="to-do-box"></ul>
+  <body data-bs-theme="dark">
+    <h1 class="text-center text-primary-emphasis">To-Do List</h1>
+    <div
+      class="container vh-100 d-flex justify-content-around align-items-center"
+    >
+      <div id="todo">
+        <div class="todo-box">
+          <input
+            type="text"
+            id="todo-input"
+            autofocus
+            placeholder="Write something here..."
+          />
+          <button type="button" id="add-task">Add Your Task</button>
+          <ul id="todo-list"></ul>
+        </div>
       </div>
     </div>
     <script src="https://kit.fontawesome.com/bf520e6492.js"></script>
