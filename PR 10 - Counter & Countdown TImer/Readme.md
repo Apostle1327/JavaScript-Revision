@@ -19,7 +19,11 @@ A simple web application that allows users to increment/decrement a counter and 
 
   ## Live Demo
 
-You can see a live version of this project [here](https://drive.google.com/drive/folders/1qDNlsCEUIRHUPxkK_6bW2snt4xHXXC7z?usp=sharing).
+  https://github.com/Apostle1327/JavaScript-Revision/blob/75af28082f9afa3558979a9ee7d04b98529fba11/PR%2010%20-%20Counter%20%26%20Countdown%20TImer/Assets/Clips/Countdown%20-%201.mp4
+
+  https://github.com/Apostle1327/JavaScript-Revision/blob/75af28082f9afa3558979a9ee7d04b98529fba11/PR%2010%20-%20Counter%20%26%20Countdown%20TImer/Assets/Clips/Counter%20-%201.mp4
+
+  You can see a live version of this project [here]().
 
 ## How to Use
 
@@ -45,10 +49,10 @@ You can see a live version of this project [here](https://drive.google.com/drive
 
 ## Screenshots
 
-<img width="330" alt="" src="Assets/Images/Countdown - 1.png">
-<img width="330" alt="" src="Assets/Images/Countdown - 2.png">
-<img width="330" alt="" src="Assets/Images/Counter - 1.png">
-<img width="330" alt="" src="Assets/Images/Counter - 2.png">
+<img width="330" alt="Countdown - 1" src="Assets/Images/Countdown - 1.png">
+<img width="330" alt="Countdown - 2" src="Assets/Images/Countdown - 2.png">
+<img width="330" alt="Counter - 1" src="Assets/Images/Counter - 1.png">
+<img width="330" alt="Counter - 2" src="Assets/Images/Counter - 2.png">
 
 ## Technologies Used
 
