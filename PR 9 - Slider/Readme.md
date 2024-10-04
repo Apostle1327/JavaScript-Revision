@@ -1,4 +1,4 @@
-# Counter and Countdown
+# Image Slider
 
 A simple web application that allows users to increment/decrement a counter and run a countdown timer with a visually appealing interface. The countdown timer can be customized to display time in `HH:MM:SS` format, and it includes features like pause, reset, and a modal that appears when time is up.
 
