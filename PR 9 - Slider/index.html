@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Assets/CSS/stylesheet.css" />
     <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
   </head>
-  <body data-bs-theme="dark">
+  <body>
     <div class="container bg-secondary-subtle">
       <div class="slider overflow-hidden position-relative">
         <div class="slides">
@@ -60,7 +60,12 @@
               class="img-fluid"
             />
           </div>
-          <div class="slide">
+          <div
+            class="slide"
+            data-bs-toggle="modal"
+            data-bs-target="#fetchModal"
+            data-trigger="modal"
+          >
             <img
               src="Assets/Images/wp9177863-4k-japan-car-wallpapers.jpg"
               alt="Image-8"
@@ -69,34 +74,43 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-title">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <div class="modal-body"><p>Thank You for Visiting!</p></div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+    <div
+      class="modal position-fixed w-100 h-100 justify-content-center align-items-center"
+      id="fetchModal"
+      tabindex="8"
+      role="dialog"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank You for Visiting!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center bg-white">
+            <p>We appreciate your interest!</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="prev"><</div>
-    <div class="next">></div>
-    <script src="Assets/JavaScript/script.js"></script>
+
+    <div class="backward">←</div>
+    <div class="forward">→</div>
     <script src="Assets/JavaScript/bootstrap.bundle.js"></script>
+    <script src="Assets/JavaScript/script.js"></script>
   </body>
 </html>
