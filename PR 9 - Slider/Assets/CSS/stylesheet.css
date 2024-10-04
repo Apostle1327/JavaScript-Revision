@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.container {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
 .slides {
   display: flex;
   transition: all 0.5s ease-in-out;
@@ -45,4 +55,26 @@ html {
 .modal-body {
   padding: 30px !important;
   border-radius: 25px !important;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(10, 36, 232, 0.5);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.indicator.active {
+  background-color: aqua;
 }

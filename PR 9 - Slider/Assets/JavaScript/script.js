@@ -1,5 +1,6 @@
 const slides = document.querySelector(`.slides`);
 const slideCount = document.querySelectorAll(`.slides .slide`).length;
+const indicators = document.querySelectorAll(".indicator");
 let currentSlide = 0;
 let intervalTime = 2000;
 let slideInterval;
@@ -39,6 +40,27 @@ document.querySelector(".forward").addEventListener("click", () => {
   slideForward();
   haltSlider();
   startSlider();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowRight") {
+    slideForward();
+    stopSlider();
+    startSlider();
+  } else if (event.key === "ArrowLeft") {
+    slideBackwards();
+    stopSlider();
+    startSlider();
+  }
+});
+
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener("click", () => {
+    currentSlide = index;
+    updateSlide();
+    stopSlider();
+    startSlider();
+  });
 });
 
 const modalElement = document.getElementById("fetchModal");
