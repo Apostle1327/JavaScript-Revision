@@ -90,10 +90,14 @@
     <div
       class="modal position-fixed w-100 h-100 justify-content-center align-items-center"
       id="fetchModal"
-      tabindex="8"
+      tabindex="-1"
       role="dialog"
     >
-      <div class="modal-dialog">
+      <div
+        class="modal-dialog"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Thank You for Visiting!</h5>

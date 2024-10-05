@@ -30,27 +30,28 @@ function haltSlider() {
   clearInterval(slideInterval);
 }
 
-document.querySelector(".backward").addEventListener("click", () => {
-  slideBackwards();
+function restartSlider() {
   haltSlider();
   startSlider();
+}
+
+document.querySelector(".backward")?.addEventListener("click", () => {
+  slideBackwards();
+  restartSlider();
 });
 
-document.querySelector(".forward").addEventListener("click", () => {
+document.querySelector(".forward")?.addEventListener("click", () => {
   slideForward();
-  haltSlider();
-  startSlider();
+  restartSlider();
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") {
     slideForward();
-    stopSlider();
-    startSlider();
+    restartSlider();
   } else if (event.key === "ArrowLeft") {
     slideBackwards();
-    stopSlider();
-    startSlider();
+    restartSlider();
   }
 });
 
@@ -58,24 +59,20 @@ indicators.forEach((indicator, index) => {
   indicator.addEventListener("click", () => {
     currentSlide = index;
     updateSlide();
-    stopSlider();
-    startSlider();
+    restartSlider();
   });
 });
 
 const modalElement = document.getElementById("fetchModal");
 const modal = new bootstrap.Modal(modalElement);
-const modalTriggerSlide = document.querySelector('[data-trigger="modal"]');
-modalTriggerSlide.addEventListener("click", () => {
-  modal.show();
-});
+
 const lastSlide = document.querySelectorAll(".slide")[slideCount - 1];
 lastSlide.addEventListener("click", () => {
   haltSlider();
   modal.show();
 });
 
-modalElement.addEventListener("hidden.bs.modal", () => {
+modalElement.addEventListener("hidden", () => {
   startSlider();
 });
 

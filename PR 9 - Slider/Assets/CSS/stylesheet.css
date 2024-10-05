@@ -31,7 +31,7 @@ body {
   top: 50%;
   translate: transformY(-50%);
   background-color: transparent;
-  color: burlywood;
+  color: rgb(254, 22, 1);
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
