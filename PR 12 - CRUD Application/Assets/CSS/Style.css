@@ -1,3 +1,29 @@
 #updateData {
   display: none;
 }
+
+.errorMsg {
+  text-align: center;
+  color: red;
+}
+
+.form-floating .form-control {
+  padding: 1rem 1.5rem;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.form-floating label {
+  padding-left: 1.5rem;
+}
+
+.form-floating > .form-control:not(:placeholder-shown) + label,
+.form-floating > .form-control:focus + label {
+  transform: translateY(-2rem);
+  font-size: 0.85rem;
+  background: transparent;
+}
+
+.form-floating > .form-control:focus + label {
+  color: #007bff;
+}
