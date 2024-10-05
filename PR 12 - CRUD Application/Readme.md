@@ -16,7 +16,7 @@ Search Data: With a powerful search functionality, users can quickly find specif
 
 Together, these features create a robust data management solution that prioritizes ease of use and efficiency, making it an essential tool for anyone looking to organize and manage their data effectively.
 
-You can see a live version of this project [here]("https://github.com/Apostle1327/JavaScript-Revision/tree/master/PR%209%20-%20Slider").
+You can see a live version of this project [here]("https://github.com/Apostle1327/JavaScript-Revision/tree/master/PR%2012%20-%20CRUD%20Application").
 
 ## How to Use
 
@@ -30,30 +30,19 @@ You can see a live version of this project [here]("https://github.com/Apostle132
 2. Navigate to the project directory :
 
 ```bash
- cd Slider-Project
+ cd CRUD Application
 ```
 
 3. Open the index.html file in a browser.
 
-## Features :
-
-This image slider includes several user-friendly features designed to enhance navigation and interactivity:
-
-- Forward and Backward Navigation: Users can easily move through the images using intuitive left and right arrow buttons, allowing for a smooth browsing experience.
-
-- Interactable Indicators: Circular pagination dots below the images provide a visual representation of the current slide and enable users to jump directly to any specific image with a simple click.
-
-These features work together to create a dynamic and engaging user experience, making it easy to explore the entire collection of images with just a few clicks!
-
 ## Screenshots
 
-<img width="330" alt="Countdown - 1" src="Assets/Images/Slider - 1.png">
-<img width="330" alt="Countdown - 2" src="Assets/Images/Slider - 2.png">
-<img width="330" alt="Countdown - 3" src="Assets/Images/Slider - 3.png">
-<img width="330" alt="Countdown - 4" src="Assets/Images/Slider - 4.png">
+<img width="330" alt="Countdown - 1" src="Assets/Images/CRUD App - 1.png">
+<img width="330" alt="Countdown - 1" src="Assets/Images/CRUD App - 2.png">
+<img width="330" alt="Countdown - 1" src="Assets/Images/CRUD App - 3.png">
 
 ## Technologies Used
 
 - **HTML** : Markup structure.
 - **CSS** : Styling and layout.
-- **JavaScript** : Core functionality for counter and countdown logic.
+- **JavaScript** : Core functionality for Adding the Data, Editing/Updating it, Deleting it and Searching through Local Storage .

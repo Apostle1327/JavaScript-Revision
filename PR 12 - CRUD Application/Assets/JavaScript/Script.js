@@ -65,12 +65,12 @@ function showData() {
     html += "<td>" + element.address + "</td>";
     html += "<td>" + element.email + "</td>";
     html +=
-      `<td><button type="button" onclick="deleteData(` +
-      index +
-      `)" class="btn btn-danger">Delete</button>
-      <button type="button" onclick="editData(` +
+      `<td><button type="button" onclick="editData(` +
       index +
       `)" class="btn btn-warning">Edit</button>
+      <button type="button" onclick="deleteData(` +
+      index +
+      `)" class="btn btn-danger">Delete</button>
       </td>`;
     html += "</tr>";
   });
