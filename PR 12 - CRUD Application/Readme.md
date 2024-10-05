@@ -4,9 +4,9 @@ The Data Manager web app is a tool designed to streamline data management with a
 
 ## Features
 
-- **Image Slider** :
+- **CRUD - Record Management Web App** :
 
-  - The Data Manager web app offers a comprehensive solution for efficient data management, leveraging the power of HTML, CSS, and JavaScript. Here’s a detailed overview of its key features:
+- The Data Manager web app offers a comprehensive solution for efficient data management, leveraging the power of HTML, CSS, and JavaScript. Here’s a detailed overview of its key features:
 
 Edit Data: The existing data entries can be easily modified. The intuitive interface allows for quick access to specific records, enabling users to update fields as needed. Whether it's changing a value or adding new information, the editing process is seamless and user-friendly.
 
