@@ -86,39 +86,38 @@
         <div class="col-lg-12">
           <button
             type="button"
-            class="btn btn-success"
+            class="btn btn-success me-2"
             id="submit"
             onclick="addData()"
+            style="display: inline-block"
           >
             Add Data
           </button>
 
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-primary me-2"
             id="updateData"
             onclick="editData()"
             style="display: none"
           >
-            Update Data
+            Update
           </button>
-
           <button type="button" class="btn btn-warning" onclick="clearForm()">
             Clear
           </button>
+        </div>
+        <div class="form-floating col-md-6 mb-4 mt-3">
+          <input
+            type="text"
+            class="form-control"
+            id="search"
+            placeholder="Search"
+            required
+            onkeyup="searchRecords()"
+          />
 
-          <div class="form-floating col-md-6 mb-4 mt-3">
-            <input
-              type="text"
-              class="form-control"
-              id="search"
-              placeholder="Search"
-              required
-              onkeyup="searchRecords()"
-            />
-
-            <label for="floatingInput">Search</label>
-          </div>
+          <label for="floatingInput">Search</label>
         </div>
       </form>
 

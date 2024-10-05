@@ -136,8 +136,8 @@ function deleteData(index) {
 
 // function to Edit/Update data from local storage
 function editData(index) {
-  document.getElementById("submit").style.display = "block";
-  document.getElementById("updateData").style.display = "none";
+  document.getElementById("submit").style.display = "none";
+  document.getElementById("updateData").style.display = "inline-block";
 
   try {
     var peopleList;
@@ -170,8 +170,9 @@ function editData(index) {
           localStorage.setItem("peopleList", JSON.stringify(peopleList));
           showData();
 
-          document.getElementById("submit").style.display = "none";
-          document.getElementById("updateData").style.display = "block";
+          document.getElementById("submit").style.display = "inline-block";
+          document.getElementById("updateData").style.display = "none";
+          clearForm();
         }
       };
     } else {
