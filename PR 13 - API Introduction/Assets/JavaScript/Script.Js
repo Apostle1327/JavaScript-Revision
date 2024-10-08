@@ -1,3 +1,5 @@
+// Git API Card.
+
 var button = document.querySelector("#retrieve");
 button.addEventListener("click", dataHandler);
 
