@@ -1,42 +1,47 @@
 const button = document.querySelector("#image-fetch");
 const imgContainer = document.querySelector("#img-container");
-const breedSelector = document.querySelector(`#breed-selector`);
+const breedSelector = document.querySelector("#breed-selector");
+const img = document.querySelector("#dog-image");
 
-fetch(`https://dog.ceo/api/breeds/list/all`)
+fetch("https://dog.ceo/api/breeds/list/all")
   .then((response) => response.json())
   .then((data) => {
-    const breeds = Object.keys(data.message);
-    breeds.forEach((breed) => {
-      const options = document.createElement(`option`);
-      options.value = breed;
-      options.textContent = breed;
-      breedSelector.appendChild(options);
-    });
+    const breeds = data.message;
+    for (const breed in breeds) {
+      const breedOption = document.createElement("option");
+      breedOption.value = breed;
+      breedOption.textContent = breed;
+      breedSelector.appendChild(breedOption);
+
+      if (breeds[breed].length >= 1) {
+        breeds[breed].forEach((subBreed) => {
+          const subBreedOption = document.createElement("option");
+          subBreedOption.value = `${breed}/${subBreed}`;
+          subBreedOption.textContent = `- ${subBreed}`;
+          breedSelector.appendChild(subBreedOption);
+        });
+      }
+    }
   })
   .catch((error) => {
-    console.error(`Error fetching the data!`, error);
+    console.error("Error fetching the data!", error);
   });
 
-breedSelector.addEventListener(`change`, (event) => {
-  const selectBreed = event.target.value;
-
-  if (selectBreed !== `Select A breed`) {
-    button.addEventListener(`click`, () => {
-      fetch(`https://dog.ceo/api/breed/${selectBreed}/images/random`)
-        .then((response) => response.json())
-        .then((data) => {
-          displayImage(data.message);
-        })
-        .catch((error) => {
-          console.error(`Error Fetching the Data!`, error);
-        });
-    });
+button.addEventListener("click", () => {
+  const selectedBreed = breedSelector.value;
+  if (selectedBreed !== "Select A breed") {
+    fetch(`https://dog.ceo/api/breed/${selectedBreed}/images/random`)
+      .then((response) => response.json())
+      .then((data) => {
+        displayImage(data.message);
+      })
+      .catch((error) => {
+        console.error("Error Fetching the Data!", error);
+      });
   }
 });
 
 function displayImage(imageUrl) {
-  img = document.querySelector(`#dog-image`);
   img.src = imageUrl;
-  imgContainer.innerHTML = ``;
-  imgContainer.appendChild(img);
+  img.alt = "Dog image";
 }
