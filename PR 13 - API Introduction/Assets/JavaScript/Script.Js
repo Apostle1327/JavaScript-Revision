@@ -43,42 +43,51 @@ function displayData(user) {
 // Random user API Card.
 
 var button2 = document.querySelector("#retrieve2");
-button2.addEventListener("click", userDataHandler);
 
-function userDataHandler() {
-  const xhr = new XMLHttpRequest();
-  const fetchURL = `https://jsonplaceholder.typicode.com/users`;
-  xhr.open("GET", fetchURL, true);
+// function userDataHandler() {
+//   const xhr = new XMLHttpRequest();
+//   const fetchURL = `https://jsonplaceholder.typicode.com/users`;
+//   xhr.open("GET", fetchURL, true);
 
-  xhr.onprogress = function () {
-    console.log(`Fetching In Progress!`);
-  };
+//   xhr.onprogress = function () {
+//     console.log(`Fetching In Progress!`);
+//   };
 
-  xhr.onload = function () {
-    console.log(this.status);
-    if (this.status == 200 || this.status == 201) {
-      const randomUsers = JSON.parse(this.responseText);
-      processData(randomUsers);
-    } else {
-      console.log(`No Data Found!`);
-    }
-  };
-  xhr.send();
-}
+//   xhr.onload = function () {
+//     console.log(this.status);
+//     if (this.status == 200 || this.status == 201) {
+//       const randomUsers = JSON.parse(this.responseText);
+//       processData(randomUsers);
+//     } else {
+//       console.log(`No Data Found!`);
+//     }
+//   };
+//   xhr.send();
+// }
 
-function processData(randomUsers) {
-  const userList = document.querySelector("#retrieved-list");
-  userList.innerHTML = ``;
+// function processData(randomUsers) {
+//   const userList = document.querySelector("#retrieved-list");
+//   userList.innerHTML = ``;
 
-  randomUsers.forEach((user) => {
-    let userDiv = document.createElement("div");
-    userDiv.classList.add("user-card");
+//   randomUsers.forEach((user) => {
+//     let userDiv = document.createElement("div");
+//     userDiv.classList.add("user-card");
 
-    userDiv.innerHTML = `
+//     userDiv.innerHTML = `
 
-            <h3>${user.name}</h3>
-            <p>${user.username}</p>
-            `;
-    userList.appendChild(userDiv);
-  });
-}
+//             <h3>${user.name}</h3>
+//             <p>${user.username}</p>
+//             `;
+//     userList.appendChild(userDiv);
+//   });
+// }
+
+// Random User API with Fetch Method.
+
+button2.addEventListener(`click`, () =>
+  fetch(`https://jsonplaceholder.typicode.com/users`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {})
+);
