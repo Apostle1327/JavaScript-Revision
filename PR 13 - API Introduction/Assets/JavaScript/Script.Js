@@ -14,7 +14,7 @@ function dataHandler() {
 
   xhr.onload = function () {
     console.log(this.status);
-    if (this.status == 200 || this.status == 201) {
+    if (this.status === 200 || this.status === 201) {
       const user = JSON.parse(this.responseText);
       console.log(user);
       displayData(user);

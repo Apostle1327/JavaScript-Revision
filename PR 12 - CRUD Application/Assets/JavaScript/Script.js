@@ -1,4 +1,5 @@
 // Validating the Form Data
+
 function validateForm(myForm) {
   const errorMsgElements = document.querySelectorAll(".errorMsg");
   errorMsgElements.forEach((el) => (el.innerHTML = ""));
