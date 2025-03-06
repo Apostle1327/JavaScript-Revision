@@ -218,7 +218,7 @@ function searchRecords() {
         <td>${record.address}</td>
         <td>${record.email}</td>
         <td>
-          <button class="btn btn-danger" onclick="editRecord(${peopleList.indexOf(
+          <button class="btn btn-danger" onclick="editData(${peopleList.indexOf(
             record
           )})">Edit</button>
           <button class="btn btn-warning" onclick="deleteData(${peopleList.indexOf(
