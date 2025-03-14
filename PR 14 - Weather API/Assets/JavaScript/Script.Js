@@ -71,4 +71,4 @@ document
   });
 
 // Fetch weather data for a default city
-weather.fetchWeather("Dubai");
+weather.fetchWeather("Switzerland");
