@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" , initial-scale=1.0" />
-    <title>Weather Forecast App</title>
+
     <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
     <link rel="stylesheet" href="Assets/CSS/Style.css" />
+
+    <title>Weather Forecast App</title>
   </head>
+
   <body>
     <div
       class="container vh-100 d-flex justify-content-center align-items-center"
@@ -14,6 +18,7 @@
       <div class="card">
         <div class="search">
           <input type="text" class="search-bar" placeholder="Search" />
+
           <button>
             <iconify-icon
               icon="line-md:my-location-loop"
@@ -23,22 +28,29 @@
             ></iconify-icon>
           </button>
         </div>
+
         <div class="weather loading">
           <h2 class="city">Weather in Denver</h2>
+
           <h1 class="temp">51°C</h1>
+
           <div class="flex">
             <img
               src="https://openweathermap.org/img/wn/04n.png"
               alt=""
               class="icon"
             />
+
             <div class="description">Cloudy</div>
           </div>
+
           <div class="humidity">Humidity: 60%</div>
+
           <div class="wind">Wind speed: 6.2 km/h</div>
         </div>
       </div>
     </div>
+
     <script src="Assets/JavaScript/Script.Js"></script>
     <script src="Assets/JavaScript/bootstrap.bundle.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
